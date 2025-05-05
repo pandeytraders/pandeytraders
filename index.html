@@ -16,7 +16,27 @@
       background-color: #007b5e;
       color: white;
       padding: 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    header img {
+      width: 100px; /* Logo size */
+      height: auto;
+      margin-right: 20px;
+    }
+    header .logo-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    header p {
+      margin: 0;
+      font-size: 16px;
     }
     section {
       padding: 40px 20px;
@@ -69,8 +89,11 @@
 <body>
 
 <header>
-  <h1>पांडेय ट्रेडर्स</h1>
-  <p>(सुखदेव पांडेय खाद बीज भंडार)</p>
+  <img src="https://raw.githubusercontent.com/pandeytraders/pandeytraders/main/WhatsApp_Image_2025-05-05_at_13.03.13_7f344caf-removebg-preview.png" alt="Pandey Traders Logo">
+  <div class="logo-text">
+    <h1>पांडेय ट्रेडर्स</h1>
+    <p>(सुखदेव पांडेय खाद बीज भंडार)</p>
+  </div>
 </header>
 
 <section>
@@ -103,22 +126,19 @@
 <section>
   <h2 style="text-align: center; color: #007b5e;">हम जिन ब्रांड्स के साथ कार्य करते हैं</h2>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px;">
-
     <a href="https://www.indimmune.com/" target="_blank" style="text-decoration: none; color: inherit;">
       <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; width: 220px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
         <img src="https://raw.githubusercontent.com/pandeytraders/pandeytraders/main/1631315870197.jpg" alt="IIL Logo" style="width: 100px; height: auto; margin-bottom: 10px;">
-        <p><strong>Insecticides (India) Limited
-</strong></p>
+        <p><strong>Insecticides (India) Limited</strong></p>
       </div>
     </a>
 
     <a href="https://www.biostadt.com/seeds/" target="_blank" style="text-decoration: none; color: inherit;">
       <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; width: 220px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <img src="https://raw.githubusercontent.com/pandeytraders/pandeytraders/main/nandi_seeds_logo.jpg"" alt="Nandi Seeds Logo" style="width: 100px; height: auto; margin-bottom: 10px;">
+        <img src="https://raw.githubusercontent.com/pandeytraders/pandeytraders/main/nandi_seeds_logo.jpg" alt="Nandi Seeds Logo" style="width: 100px; height: auto; margin-bottom: 10px;">
         <p><strong>Nandi Seeds Pvt. Ltd.</strong></p>
       </div>
     </a>
-
   </div>
 </section>
 
@@ -132,14 +152,12 @@
 <section>
   <h2 style="text-align: center; color: #007b5e;">हमारी टीम</h2>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px;">
-    
     <div style="background: white; border-radius: 10px; padding: 20px; text-align: center; max-width: 300px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       <img src="images/owner.jpg" alt="सुखदेव पांडेय" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
       <h3>सुखदेव पांडेय</h3>
       <p>संस्थापक एवं प्रमुख</p>
       <p style="font-size: 14px;">2002 से कृषि सेवा में समर्पित। किसानों को गुणवत्तापूर्ण बीज, खाद और मार्गदर्शन देने में 20+ वर्षों का अनुभव।</p>
     </div>
-
   </div>
 </section>
 
