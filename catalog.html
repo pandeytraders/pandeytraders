@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog - Pandey Traders</title>
+    <meta name="description" content="View the complete product catalog of Pandey Traders: Certified Seeds, NPK Fertilizers, Crop Protection, and Farm Equipment.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #065F46; /* Deep Emerald/Forest */
+            --color-accent: #10B981; /* Emerald 500 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        html { 
+            scroll-padding-top: 5.5rem; 
+        }
+        .whatsapp-fab {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 1000;
+            background-color: var(--color-accent);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+        .whatsapp-fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .table-header {
+            background-color: #065F46; /* Tailwind: emerald-800 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-emerald-800 flex items-center gap-3">
+                 <img src="https://raw.githubusercontent.com/pandeytraders/pandeytraders/main/WhatsApp_Image_2025-05-05_at_13.03.13_7f344caf-removebg-preview.png" alt="Pandey Traders Logo" class="h-14 w-auto">
+                <span class="hidden sm:inline">Pandey Traders</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html#about" class="text-gray-700 hover:text-emerald-700 transition-colors duration-300 font-medium">About</a>
+                <a href="index.html#offerings" class="text-gray-700 hover:text-emerald-700 transition-colors duration-300 font-medium">Offerings</a>
+                <a href="#top" class="text-emerald-700 font-bold border-b-2 border-emerald-700 transition-colors duration-300">Products (Catalog)</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-emerald-700 transition-colors duration-300 font-medium">Contact</a>
+            </nav>
+            <a href="tel:+917703079301" class="hidden md:inline-block bg-emerald-600 text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-emerald-700 transition-all duration-300 shadow-md hover:shadow-lg">
+                Call Now
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-emerald-700 focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-gray-200">
+            <a href="index.html#about" class="block py-2 text-gray-600 hover:text-emerald-700">About Us</a>
+            <a href="index.html#offerings" class="block py-2 text-gray-600 hover:text-emerald-700">Offerings</a>
+            <a href="#top" class="block py-2 text-emerald-700 font-bold">Products (Catalog)</a>
+            <a href="index.html#contact" class="block py-2 text-gray-600 hover:text-emerald-700">Contact</a>
+            <a href="tel:+917703079301" class="block mt-2 text-center bg-emerald-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-emerald-700 transition shadow">
+                Call Now
+            </a>
+        </div>
+    </header>
+
+    <section class="bg-emerald-700 py-16 text-white text-center" id="top">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-3">Complete Product Catalog</h1>
+            <p class="text-emerald-200 text-lg max-w-3xl mx-auto">High-quality seeds, fertilizers, and crop protection products available for the current season.</p>
+            <a href="tel:+917703079301" class="inline-block mt-6 bg-white text-emerald-800 font-bold py-2.5 px-8 rounded-full hover:bg-gray-100 transition shadow-lg">Call to Order Now</a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-20 md:py-28">
+
+        <section id="seeds" class="mb-20">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 flex items-center gap-3">
+                <span class="text-emerald-600">🌱</span> 1. Certified Seeds
+            </h2>
+            <div class="overflow-x-auto bg-white rounded-xl shadow-xl">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="table-header text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider rounded-tl-xl">Farming Crop</th>
+                            <th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">Product Varieties</th>
+                            <th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider rounded-tr-xl">Key Features</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-gray-900">गेहूं (Wheat)</td>
+                            <td class="px-6 py-4 text-gray-700">HD-2967, HD-3086, DBW-187 (Karan Vandana), Pusa Tejas</td>
+                            <td class="px-6 py-4 text-gray-600">High Yield, Disease Resistant, Less Water Requirement</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 bg-gray-100">
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-gray-900">धान/चावल (Paddy)</td>
+                            <td class="px-6 py-4 text-gray-700">Arize 6444 Gold (Hybrid), KRH-4, Pusa Basmati 1121</td>
+                            <td class="px-6 py-4 text-gray-600">BLB Resistant, Superior Grain Quality, Higher Yield</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-gray-900">सरसों (Mustard)</td>
+                            <td class="px-6 py-4 text-gray-700">Pusa Bold, Pioneer 45S42, Dhanuka 108</td>
+                            <td class="px-6 py-4 text-gray-600">High Oil Content, Pod Shattering Resistance</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="fertilizers" class="mb-20">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 flex items-center gap-3">
+                <span class="text-emerald-600">🧪</span> 2. Fertilizers
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">DAP & Urea</h3>
+                    <p class="text-gray-600">Essential macro-nutrients for vigorous root development and vegetative growth.</p>
+                    <ul class="mt-3 text-sm text-gray-700 space-y-1">
+                        <li class="flex items-center"><span class="text-emerald-500 mr-2">✔</span> DAP (Di-Ammonium Phosphate)</li>
+                        <li class="flex items-center"><span class="text-emerald-500 mr-2">✔</span> Urea (46% Nitrogen)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">NPK Complex</h3>
+                    <p class="text-gray-600">Balanced formulas for all growth stages: NPK 10:26:26 and NPK 12:32:16.</p>
+                    <ul class="mt-3 text-sm text-gray-700 space-y-1">
+                        <li class="flex items-center"><span class="text-emerald-500 mr-2">✔</span> Available in original company packing.</li>
+                        <li class="flex items-center"><span class="text-emerald-500 mr-2">✔</span> Fair pricing guaranteed.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Micro-Nutrients (Zinc & Potash)</h3>
+                    <p class="text-gray-600">Treat deficiencies and boost yield quality.</p>
+                    <ul class="mt-3 text-sm text-gray-700 space-y-1">
+                        <li class="flex items-center"><span class="text-emerald-500 mr-2">✔</span> Zinc Sulphate (for yellowing leaves)</li>
+                        <li class="flex items-center"><span class="text-emerald-500 mr-2">✔</span> MOP (Potash for disease resistance)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="protection" class="mb-20">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 flex items-center gap-3">
+                <span class="text-emerald-600">🕷️</span> 3. Crop Protection & Pesticides
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 bg-white p-8 rounded-xl shadow-xl">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 border-b pb-2">Insecticides & Fungicides</h3>
+                    <p class="text-gray-600 mb-4">Protect your crop from pests and diseases with our certified range of chemicals.</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-emerald-500 font-bold mr-2 mt-1">●</span> **Targeted Insect Control:** Mission SC, Coragen/Fame, TATA-MIDI for stem borer and leaf folder.</li>
+                        <li class="flex items-start"><span class="text-emerald-500 font-bold mr-2 mt-1">●</span> **Fungal Disease Treatment:** Saff, Tilt, Nativo for rust and blight diseases.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 border-b pb-2">Herbicides (Weed Control)</h3>
+                    <p class="text-gray-600 mb-4">Effective solutions for controlling weeds without damaging the main crop.</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-emerald-500 font-bold mr-2 mt-1">●</span> **Paddy/Rice Weed Control:** Specialized herbicides for major rice weeds.</li>
+                        <li class="flex items-start"><span class="text-emerald-500 font-bold mr-2 mt-1">●</span> **General Solutions:** 2,4-D, Atrazine, and Senco for general weed management.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <div class="bg-emerald-600 p-8 md:p-12 rounded-xl shadow-2xl text-center text-white">
+            <h3 class="text-3xl font-extrabold mb-3">Need Personalized Advice?</h3>
+            <p class="text-emerald-100 mb-6 max-w-2xl mx-auto">Call us directly to get expert guidance on which product is best suited for your soil and current crop conditions.</p>
+            <a href="https://wa.me/917703079301" target="_blank" class="inline-block bg-white text-emerald-800 font-bold py-3 px-10 rounded-lg hover:bg-gray-100 transition-all duration-300 text-lg shadow-xl">
+                <span class="flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 32 32" fill="currentColor">
+                     <path d="M16.01 0C7.17 0 0 7.17 0 16.01c0 2.818.738 5.558 2.137 7.976L0 32l8.225-2.143A15.91 15.91 0 0 0 16.01 32C24.85 32 32 24.83 32 16.01 32 7.17 24.85 0 16.01 0zm0 29.423c-2.538 0-5.035-.658-7.216-1.905l-.516-.294-4.888 1.272 1.303-4.763-.335-.55a13.38 13.38 0 0 1-2.058-7.08c0-7.428 6.042-13.47 13.47-13.47 7.43 0 13.472 6.042 13.472 13.47.003 7.43-6.04 13.52-13.472 13.52zM23.423 20.51c-.352-.176-2.08-1.024-2.402-1.14-.324-.118-.56-.176-.796.175-.234.352-.918 1.14-1.125 1.373-.205.234-.41.264-.762.088-.352-.176-1.486-.548-2.833-1.744-1.046-.932-1.753-2.08-1.958-2.43-.205-.352-.021-.543.155-.717.158-.156.352-.41.528-.616.176-.205.234-.352.352-.586.117-.234.059-.44-.03-.616-.088-.175-.796-1.93-1.09-2.643-.285-.675-.575-.586-.796-.598l-.683-.012a1.37 1.37 0 0 0-1.005.47c-.352.352-1.23 1.204-1.23 2.93 0 1.726 1.26 3.392 1.434 3.63.176.234 2.48 3.79 6.016 5.312.84.362 1.494.578 2.004.738.84.267 1.604.229 2.208.14.675-.099 2.08-.85 2.372-1.671.293-.82.293-1.52.205-1.671-.087-.146-.323-.234-.675-.41z"/>
+                    </svg>
+                    WhatsApp / Call: 7703079301
+                </span>
+            </a>
+        </div>
+
+    </main>
+
+    <a href="https://wa.me/917703079301?text=Hello%20Pandey%20Traders,%20I%20have%20a%20question%20about%20your%20products." target="_blank" class="whatsapp-fab text-white p-4 rounded-full shadow-xl flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 32 32" fill="currentColor">
+         <path d="M16.01 0C7.17 0 0 7.17 0 16.01c0 2.818.738 5.558 2.137 7.976L0 32l8.225-2.143A15.91 15.91 0 0 0 16.01 32C24.85 32 32 24.83 32 16.01 32 7.17 24.85 0 16.01 0zm0 29.423c-2.538 0-5.035-.658-7.216-1.905l-.516-.294-4.888 1.272 1.303-4.763-.335-.55a13.38 13.38 0 0 1-2.058-7.08c0-7.428 6.042-13.47 13.47-13.47 7.43 0 13.472 6.042 13.472 13.47.003 7.43-6.04 13.52-13.472 13.52zM23.423 20.51c-.352-.176-2.08-1.024-2.402-1.14-.324-.118-.56-.176-.796.175-.234.352-.918 1.14-1.125 1.373-.205.234-.41.264-.762.088-.352-.176-1.486-.548-2.833-1.744-1.046-.932-1.753-2.08-1.958-2.43-.205-.352-.021-.543.155-.717.158-.156.352-.41.528-.616.176-.205.234-.352.352-.586.117-.234.059-.44-.03-.616-.088-.175-.796-1.93-1.09-2.643-.285-.675-.575-.586-.796-.598l-.683-.012a1.37 1.37 0 0 0-1.005.47c-.352.352-1.23 1.204-1.23 2.93 0 1.726 1.26 3.392 1.434 3.63.176.234 2.48 3.79 6.016 5.312.84.362 1.494.578 2.004.738.84.267 1.604.229 2.208.14.675-.099 2.08-.85 2.372-1.671.293-.82.293-1.52.205-1.671-.087-.146-.323-.234-.675-.41z"/>
+        </svg>
+    </a>
+
+    <footer class="bg-gray-200 text-gray-700 py-6 mt-12">
+    <div class="container mx-auto px-6 text-center text-sm">
+        © 2025 Pandey Traders (Sukhdev Pandey Khad Beej Bhandar). All rights reserved. | <a href="index.html#contact" class="text-emerald-700 hover:underline">Contact Us</a>
+    </div>
+</footer>
+    <script>
+        // Mobile menu toggle logic
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        document.querySelectorAll('#mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
